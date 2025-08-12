@@ -36,9 +36,13 @@
             <td>{{ user.title }}</td>
             {% if user.age %}
                 <td>{{ user.age }}</td>
+            {% else %}
+                <td> </td>
             {% endif %}
             {% if user.hometown %}
                 <td>{{ user.hometown }}</td>
+            {% else %}
+                <td> </td>
             {% endif %}
         </tr>
     {% endfor %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'signup/style.css' %}">
+    <title>Success</title>
+</head>
+<body>
+<div class="header">
+<h1>Success</h1>
+</div>
+<div class="new_user">
+    <h2>New User</h2>
+    <ul>Name: {{ new_user.name }}</ul>
+    <ul>Title: {{ new_user.title }}</ul>
+    {% if new_user.age %}
+        <ul>Age: {{ new_user.age }}</ul>
+    {% endif %}
+    {% if new_user.hometown %}
+        <ul>Hometown: {{ new_user.hometown }}</ul>
+    {% endif %}
+</div>
+<br>
+{% if user_list %}
+    <table id="users">
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Age</th>
+            <th>Hometown</th>
+        </tr>
+    {% for user in user_list %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.title }}</td>
+            {% if user.age %}
+                <td>{{ user.age }}</td>
+            {% endif %}
+            {% if user.hometown %}
+                <td>{{ user.hometown }}</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+<br>
+<a href="../" class="back_button"><input type="button" value="Back" /></a>
+</body>
+</html>

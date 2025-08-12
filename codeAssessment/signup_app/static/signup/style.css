@@ -1,0 +1,107 @@
+body {
+    background-color: lavender;
+}
+
+h1 {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 150%;
+}
+
+h2 {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 125%;
+    padding-left: 40px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+label {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    color: midnightblue;
+    margin-left: 150px;
+}
+
+div {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+ul {
+    margin: 5px;
+}
+
+.back_button {
+font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+table {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: small;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid midnightblue;
+    padding: 8px;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: indigo;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+}
+
+.form-container {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new_user {
+    border-bottom-style: solid;
+    border-bottom-color: midnightblue;
+    padding: 10px;
+    margin: 0px;
+}
+
+input {
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+
+    margin-bottom: 5px;
+}
+
+input#id_name {
+    margin-left: 42px;
+}
+
+input#id_title {
+    margin-left: 32px;
+}
+
+input#id_age {
+    margin-left: 50px;
+}
+
+input#id_hometown {
+    margin-left: 5px;
+}
+
+input.button {
+    margin-top: 10px;
+    margin-left: 240px;
+    color: midnightblue;
+}
